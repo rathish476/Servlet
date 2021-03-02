@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        signup
+    </title>
+    <style>
+        body{
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(49, 110, 126);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 2px;
+            background-color: white;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=password]
+        {
+         width:220px;
+         height:20px;
+         padding:15px;
+         margin:15px 0 20px 0;
+         display:inline-block;
+         border:none;
+         outline:none;
+         background:#ffff;
+        } 
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=password]:focus
+        { 
+        
+            background-color:beige;
+            outline:none;
+        }
+        .registerbtn{
+            background-color:turquoise;
+            color:black;
+            padding: 16px 20px;
+            margin: 8px;
+            cursor:pointer;
+            width:100%;
+            opacity: 0.9;
+        }
+        .registerbtn:hover{
+            opacity: 1;
+        }
+        a{
+            color:#0b0b41;
+        }
+        .login{
+            background: whitesmoke;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <form action="Homepage.html">
+        <h1>Signup</h1>
+        <p>please fill this form to create an account</p>
+        <table>
+            <tr>
+                <td>
+                    <label>Name:</label>
+                </td>
+                <td>
+        <input type="text" placeholder="your Name"/>
+             </td>
+        </tr>
+        <br/>
+        <tr>
+            <td>
+                <label>Email:</label>
+            </td>
+            <td>
+            <input type="email" placeholder="Email"/>
+        </td>
+    </tr>
+        
+    <br/>
+    <tr>
+    <td>
+        <label>Contact Number:</label>
+    </td>
+    <td>
+        <input type ="text" placeholder="Ph no"/>
+</td>
+ </tr>
+    
+    <tr>
+        <td>
+            <label>password:</label>
+        </td>
+        <td>
+            <input type ="password" placeholder="password"/>
+    </td>
+     </tr>
+    
+<br/>
+<tr>
+    <td>
+        <label>Re-password:</label>
+    </td>
+    <td>
+        <input type="password" placeholder="Re-password"/>
+</td>
+</tr>
+
+<br/>
+        </table>
+    <p>By Creating an account you agree to our<a href="#">Terms and privacy</a></p>
+    <button class="registerbtn">signup</button>
+    <div class="login">
+    <p>Already have account?
+    <a href="Login.html">Login</a></p>
+    
+</form>
+</div>
+</body>
+</html>

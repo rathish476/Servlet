@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        body{
+            background-image: url("img/carimg.jpeg");
+        }
+        .center-screen{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 300px;
+            padding: 20px;
+             background-color: rgb(230, 230, 230);
+            background-origin: 2px solid rgb(115, 11, 551);
+            position: absolute;
+            left: 35%;
+            top: 40%;
+            border: 5px solid rgb(20 49 122);
+            box-shadow: 1px 7px 6px 5px rgb(26, 121, 35);
+        }
+        .center-screen>div{
+            padding: 5px;
+
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+        
+        }
+        input::placeholder{
+            text-align: center;
+        }
+        .submit{
+            height: 39px;
+            width: 209px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .submit:hover{
+            background-color: rgb(54, 134, 54);
+            color: white;
+        }
+    </style>
+    <body>
+        <form action="Homepage.html">
+        <div class="center-screen">
+            <h2>Login page</h2>
+        <div>
+        <input placeholder="enter name">
+    </div>
+    <div>
+        <input placeholder="password">
+    </div>
+    <button class="submit">submit</button>
+</form>
+    </div>
+    </body>
+</html>

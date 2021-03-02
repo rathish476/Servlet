@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+
+            }
+            .header{
+                height: 100vh;
+                background-image:url("img/carsales.jpg");
+                background-size: cover;
+                background-position:top;
+                /*display: flex;*/
+                justify-content: first base baseline;
+                align-items: right;
+                font-family: sans-serif;
+            }
+            .nav-area{
+                float: right;
+                list-style: none;
+                margin-top: 30px;
+            }
+           .nav-area li{
+                
+                display: inline-block;
+            }
+            .nav-area li a{
+                color: rgb(12, 1, 1);
+               text-decoration: none;
+                padding: 35px 20px;
+                font-family: poppins;
+                font-size: 25px;
+            }
+            .log img{
+                width: 1px;
+                float: left;
+                height:5%;
+
+            }
+            h1{
+                color:#000;
+                margin-bottom: 70px;
+                font-size:15px;
+                letter-spacing: center;
+            }
+            .search-field{
+                height: 10px;
+                padding: 10px;
+                border: none;
+                border-radius: 25px;
+                outline: none;
+            }
+            .Services{
+                position: relative;left: 600px;
+                width: 200px;
+
+            }
+            .Location{
+                position: relative;left: 600px;
+                width: 200px;
+
+            }
+            .search-btn{
+                position: relative;left: 700px;
+                height: 50px;
+                width: 50px;
+                background: #ffebff;
+                border: none;
+                color:#000;
+                border-radius: 35px;
+
+            }
+            .search-btn:hover{
+                background: #13a2ce;
+                cursor: pointer;
+            }
+            .form-box{
+            
+             background: rgb(0,0,0,0.5);
+             padding: 10px;
+
+            }
+        /*.font{
+                position: relative;left:100px;
+                        font-family: 'Exo', sans-serif;
+                        font-size: 50px;
+                    }
+                   */
+                    .colck{
+                        position: relative;top: 100px;
+                       /* border: 1px solid rgba(0,0,0,0.3);*/
+                        padding: 30px 50px;
+                        position: absolute;
+                        top:10%;
+                        left:50%;
+                        transform:translate(-60%,-50%);
+                    }
+            
+            
+        </style>
+    </head>
+        <body>
+          
+           
+            <header>
+                
+                    <div class="header">
+                    <div class="logo" >
+                    
+                        
+                    </div>
+                
+                <ul class="nav-area">
+                    <li><a href="Login.html">Login</a></li>
+                   
+                
+                    <li><a href="Register.html">Register</a></li>
+                  
+                </ul>
+                     
+            <div class="header">
+                <form>
+                   <marquee> <h1>Find Everything Near You...</h1></marquee>
+                    <div class="form-box">
+                        <input type="text" class="search-field Services" placeholder="To your Services..">
+                        <input type="text" class="search-field Location" placeholder="Location">
+                        <button class="search-btn" type="button">Search</button>
+
+                    </div>
+                </form>
+                
+                    
+                   
+                   
+                        <script>
+                        function updateTime(){
+                            var dateTime = new Date();
+                            var hours = dateTime.getHours();
+                            var minutes = dateTime.getMinutes();
+                            var seconds = dateTime.getSeconds();
+                            var am_or_pm = document.getElementById("am-or-pm");
+                    
+                            if(hours >= 12){
+                                am_or_pm.innerHTML = 'PM';
+                            }else{
+                                am_or_pm.innerHTML = 'AM';
+                            }
+                    
+                            if(hours > 12){
+                                hours = hours - 12;
+                            }
+                    
+                            document.getElementById("hours").innerHTML=hours;
+                            document.getElementById("minutes").innerHTML=minutes;
+                            document.getElementById("seconds").innerHTML=seconds;
+                        }
+                        setInterval( updateTime, 1000);
+                    </script>
+                        <div class="container">
+                            <div class="colck">
+                                <h1 class="font">
+                    
+                                    <span id="hours">12</span>
+                                    <span>:</span>
+                                    <span id="minutes">60</span>
+                                    <span>:</span>
+                                    <span id="seconds">60</span>
+                                    <span id="am-or-pm">AM</span>
+                    
+                                </h1>
+                            </div>
+                        </div>
+        
+            </div>
+        </header>
+        </body>
+    
+</html>
